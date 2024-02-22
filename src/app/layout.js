@@ -1,7 +1,8 @@
-import { Inter } from "next/font/google";
-import "./globals.css";
+import Script from 'next/script';
+import { ThemeProvider } from 'next-themes';
 
-const inter = Inter({ subsets: ["latin"] });
+import "./globals.css";
+import { Footer, Navbar } from './components';
 
 export const metadata = {
   title: "Create Next App",
@@ -11,7 +12,20 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={inter.className}>{children}</body>
+      <body>
+        <ThemeProvider attribute="class">
+          <div className="min-h-screen bg-white dark:bg-nft-dark">
+            <Navbar />
+            <div className="pt-65">
+              {/* <Component {...pageProps} /> */}
+              {children}
+            </div>
+            <Footer />
+          </div>
+
+          <Script src="https://kit.fontawesome.com/536146d1a6.js" crossorigin="anonymous" />
+        </ThemeProvider>
+      </body>
     </html>
   );
 }
