@@ -15,9 +15,7 @@ const MenuItems = ({ isMobile, active, setActive, setIsOpen }) => {
             case 0:
                 return '/';
             case 1:
-                return '/created-nfts';
-            case 2:
-                return '/my-nfts';
+                return '/nft-details';
             default:
                 return '/';
         }
@@ -25,7 +23,7 @@ const MenuItems = ({ isMobile, active, setActive, setIsOpen }) => {
 
     return (
         <ul className={`list-none flexCenter flex-row ${isMobile && 'flex-col h-full'}`}>
-            {['Explore NFTs', 'Listed NFTs', 'My NFTs'].map((item, i) => (
+            {['Explore NFTs', 'NFT Details'].map((item, i) => (
                 <li
                     key={i}
                     onClick={() => {
@@ -77,17 +75,11 @@ const checkActive = (active, setActive, router) => {
         case '/':
             if (active !== 'Explore NFTs') setActive('Explore NFTs');
             break;
-        case '/created-nfts':
-            if (active !== 'Listed NFTs') setActive('Listed NFTs');
-            break;
-        case '/my-nfts':
-            if (active !== 'My NFTs') setActive('My NFTs');
-            break;
-        case '/create-nft':
-            if (active !== '') setActive('');
+        case '/nft-details':
+            if (active !== 'Listed NFTs') setActive('NFT Details');
             break;
         default:
-            setActive('');
+            setActive('/');
     }
 };
 
@@ -112,7 +104,7 @@ const Navbar = () => {
                 </Link>
                 <Link href="/">
                     <div className="hidden md:flex" onClick={() => { }}>
-                        <Image src={images.logo02} objectFit="contain" width={32} height={32} alt="logo" />
+                        <Image src={images.zorb} objectFit="contain" width={32} height={32} alt="logo" />
                     </div>
                 </Link>
             </div>
