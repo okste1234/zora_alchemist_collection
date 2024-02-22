@@ -17,7 +17,6 @@ export default function RootLayout({ children }) {
           <div className="min-h-screen bg-white dark:bg-nft-dark">
             <Navbar />
             <div className="pt-65">
-              {/* <Component {...pageProps} /> */}
               {children}
             </div>
             <Footer />
