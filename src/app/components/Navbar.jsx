@@ -1,7 +1,7 @@
 "use client"
 
 import { useState, useContext, useEffect } from 'react';
-import { useRouter } from 'next/router';
+import { useRouter } from 'next/navigation';
 import { useTheme } from 'next-themes';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -76,7 +76,7 @@ const checkActive = (active, setActive, router) => {
             if (active !== 'Explore NFTs') setActive('Explore NFTs');
             break;
         case '/nft-details':
-            if (active !== 'Listed NFTs') setActive('NFT Details');
+            if (active !== 'NFT Details') setActive('NFT Details');
             break;
         default:
             setActive('/');
@@ -98,7 +98,7 @@ const Navbar = () => {
             <div className="flex flex-1 flex-row justify-start">
                 <Link href="/">
                     <div className="flexCenter md:hidden cursor-pointer" onClick={() => { }}>
-                        <Image src={image} objectFit="contain" width={32} height={32} alt="logo" />
+                        <Image src={images} objectFit="contain" width={32} height={32} alt="logo" />
                         <p className="dark:text-white text-nft-black-1 font-semibold text-lg ml-1">Zora</p>
                     </div>
                 </Link>

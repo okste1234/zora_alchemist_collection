@@ -4,7 +4,7 @@ import GoldRushExample from "./Sample";
 export default function Home() {
   return (
     <main className="">
-      <GoldRushExample />
+      {/* <GoldRushExample /> */}
     </main>
   );
 }

@@ -13,7 +13,12 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" suppressHydrationWarning>
       <body>
-        <ThemeProvider attribute="class">
+        <ThemeProvider
+          attribute="class"
+          // defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
           <div className="min-h-screen bg-white dark:bg-nft-dark">
             <Navbar />
             <div className="pt-65">
