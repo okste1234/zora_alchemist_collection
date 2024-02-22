@@ -1,5 +1,5 @@
 import Script from 'next/script';
-import { ThemeProvider } from 'next-themes';
+import { ThemeProvider } from "./context/ThemeProvide"
 
 import "./globals.css";
 import { Footer, Navbar } from './components';

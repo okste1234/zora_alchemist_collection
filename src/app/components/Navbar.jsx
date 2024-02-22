@@ -6,7 +6,7 @@ import { useTheme } from 'next-themes';
 import Image from 'next/image';
 import Link from 'next/link';
 
-import images from '../assets';
+import images from '/public/Zorb.png';
 import Button from './Button';
 
 const MenuItems = ({ isMobile, active, setActive, setIsOpen }) => {
@@ -98,13 +98,13 @@ const Navbar = () => {
             <div className="flex flex-1 flex-row justify-start">
                 <Link href="/">
                     <div className="flexCenter md:hidden cursor-pointer" onClick={() => { }}>
-                        <Image src={images.zorb} objectFit="contain" width={32} height={32} alt="logo" />
+                        <Image src={image} objectFit="contain" width={32} height={32} alt="logo" />
                         <p className="dark:text-white text-nft-black-1 font-semibold text-lg ml-1">Zora</p>
                     </div>
                 </Link>
                 <Link href="/">
                     <div className="hidden md:flex" onClick={() => { }}>
-                        <Image src={images.zorb} objectFit="contain" width={32} height={32} alt="logo" />
+                        <Image src={images} objectFit="contain" width={32} height={32} alt="logo" />
                     </div>
                 </Link>
             </div>
