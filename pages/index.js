@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import { Banner } from '../components'
+import Link from 'next/link';
 
 import images from "../assets"
 
@@ -14,6 +15,9 @@ const Home = () => {
           parentStyle="justify-start mb-7 h-72 sm:h-60 p-12 xs:p-4 xs:h-44 rounded-3xl"
         />
       </div>
+    <Link href="/nft-details">
+      <div> Click me</div>
+    </Link>
     </div>
   )
 }
