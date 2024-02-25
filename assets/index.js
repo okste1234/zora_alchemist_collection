@@ -37,14 +37,14 @@ import left from './left.png';
 import headerbg from './headerbg.png';
 import loader from './loader.gif';
 import arrow from './arrow.png';
-import zorb from './Zorb.png'
-import zoraLightWord from "./Zora Wordmark White.png";
-import zoraDarkWord from "./Zora Wordmark Black.png";
+import zora from './Zorb.png';
+import zoraTextWhite from './Zora Wordmark White.png';
+import zoraTextBlack from './Zora Wordmark Black.png';
 
 export default {
-  zoraLightWord,
-  zoraDarkWord,
-  zorb,
+  zora,
+  zoraTextWhite,
+  zoraTextBlack,
   heartOutline,
   heart,
   logo,
