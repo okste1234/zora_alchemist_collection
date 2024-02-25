@@ -4,6 +4,7 @@ import { ThemeProvider } from 'next-themes';
 import { Navbar, Footer } from '../components';
 import '../styles/globals.css';
 
+
 const MyApp = ({ Component, pageProps }) => (
   <ThemeProvider attribute="class">
     <div className="min-h-screen bg-white dark:bg-nft-dark">
