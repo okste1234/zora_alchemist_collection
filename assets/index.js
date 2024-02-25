@@ -40,8 +40,12 @@ import arrow from './arrow.png';
 import zora from './Zorb.png';
 import zoraTextWhite from './Zora Wordmark White.png';
 import zoraTextBlack from './Zora Wordmark Black.png';
+import adressImg from "./address.png";
+import alchemist from "./alchemist.webp";
 
 export default {
+  adressImg,
+  alchemist,
   zora,
   zoraTextWhite,
   zoraTextBlack,
