@@ -1,5 +1,6 @@
 import Script from 'next/script';
 import { ThemeProvider } from 'next-themes';
+import "@covalenthq/goldrush-kit/styles.css";
 
 import { Navbar, Footer } from '../components';
 import '../styles/globals.css';
